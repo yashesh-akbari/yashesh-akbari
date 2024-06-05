@@ -8,7 +8,7 @@
 
 - 📄 Know about my experiences (https://drive.google.com/file/d/1Sv3zNUBAmuEr-yeKKhVFVaiYoISh8R4z/view?usp=drivesdk)
 
-- ⚡ Fun fact **I am funny**
+- ⚡ Fun fact **I am Mysterious**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
