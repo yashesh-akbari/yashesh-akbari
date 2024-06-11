@@ -9,7 +9,7 @@
 
 - 📄 Know about my experiences ((https://drive.google.com/drive/folders/1SknEAX7E_aE00oZ_Rz6CWwR8Mbad74c1))
   
-- ⚡ Fun fact **I am Mysterious**
+- ⚡ Fun fact **I am Mysterious...**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
