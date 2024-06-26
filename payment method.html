@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment Page</title>
+<style>
+  /* CSS for styling */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  .payment-options {
+    margin-top: 20px;
+  }
+  .payment-option {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .payment-option label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .payment-option select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #0056b3;
+  }
+  footer {
+    background-color: burlywood;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Payment Page</h1>
+
+  <!-- Payment Options -->
+  <div class="payment-options">
+    <!-- Wallet Payment -->
+    <div class="payment-option">
+      <label for="wallet">Pay with Wallet:</label>
+      <select id="wallet" name="wallet">
+        <option value="paytm">Paytm</option>
+        <option value="amazon_pay">Amazon Pay</option>
+        <option value="phone_pe">PhonePe</option>
+      </select>
+    </div>
+
+    <!-- Card Payment -->
+    <div class="payment-option">
+      <label for="card">Pay with Card:</label>
+      <select id="card" name="card">
+        <option value="debit">Debit Card</option>
+        <option value="credit">Credit Card</option>
+      </select>
+    </div>
+
+    <!-- Net Banking Payment -->
+    <div class="payment-option">
+      <label for="net_banking">Pay with Net Banking:</label>
+      <select id="net_banking" name="net_banking">
+        <!-- Add options for different banks -->
+        <option value="bank1">Bank 1</option>
+        <option value="bank2">Bank 2</option>
+        <option value="bank3">Bank 3</option>
+      </select>
+    </div>
+
+    <!-- UPI Payment -->
+    <div class="payment-option">
+      <label for="upi">Pay with UPI:</label>
+      <select id="upi" name="upi">
+        <!-- Add options for different UPI apps -->
+        <option value="google_pay">Google Pay</option>
+        <option value="phone_pe_upi">PhonePe UPI</option>
+        <option value="paytm_upi">Paytm UPI</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Payment Button -->
+  <button type="button">Proceed to Payment</button>
+</div>
+    <button type="submit" onclick="redirect()" align-items="center">next</button>
+  <script>
+    function redirect() {
+      window.location.href = "thank you.html";}
+      </script>
+      <footer>
+        <!-- Footer links -->
+        <a href="home.html">Home</a>
+        <a href="history.html">History</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="user.html">User</a>
+      </footer>
+</body>
+</html>

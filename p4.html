@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<style>
+     body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+</style>
+</head>
+<body>
+<form action="p5.html" method="POST">
+  <h1><header>Registration Form<header></h1>
+  <label for="name">Name:*</label><br>
+  <input type="text" id="name" name="name" required><br>
+
+  <label for="email">Email:*</label><br>
+  <input type="email" id="email" name="email" required><br>
+
+  <label for="address">Address:*</label><br>
+  <input type="text" id="address" name="address" required><br>
+
+  <label for="phone">Phone Number:*</label><br>
+  <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br>
+
+  <label for="password">Password:*</label><br>
+  <input type="password" id="password" name="password" required><br>
+
+  <label for="confirm_password">Confirm Password:*</label><br>
+  <input type="password" id="confirm_password" name="confirm_password" required><br>
+
+  <label for="dob">Date of Birth:*</label><br>
+  <input type="date" id="dob" name="dob" required><br>
+<br>
+  <input type="submit" value="submit" style="text-align: center;">
+</form>
+<script>
+  // JavaScript to validate password and confirm password
+  const password = document.getElementById("password");
+  const confirm_password = document.getElementById("confirm_password");
+
+  function validatePassword() {
+    if (password.value != confirm_password.value) {
+      confirm_password.setCustomValidity("Passwords do not match");
+    } else {
+      confirm_password.setCustomValidity("");
+    }
+  }
+
+  password.addEventListener("change", validatePassword);
+  confirm_password.addEventListener("change", validatePassword);
+
+  const registrationForm = document.getElementById("registrationForm");
+  const dob = document.getElementById("dob");
+
+  registrationForm.addEventListener("submit", function(event) {
+    const today = new Date();
+    const dobDate = new Date(dob.value);
+    const age = today.getFullYear() - dobDate.getFullYear();
+
+    if (age < 18) {
+      event.preventDefault(); // Prevent form submission
+      window.location.href = "blackpage.html"; // Redirect to blackpage.html
+    }
+    else
+    {
+    <button onclick="reredirect()">submit and next</button>
+    function reredirect() {
+      window.location.href = "p5.html";}
+  }});
+  </script>
+</body>
+</html>

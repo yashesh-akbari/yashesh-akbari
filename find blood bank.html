@@ -1,0 +1,71 @@
+<!-- wp:html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Nearest Blood Bank</title>
+    <style>
+        /* Add your CSS styles here */
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        #locationInput {
+            width: 300px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        #submitBtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+footer {
+    background-color: burlywood;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Find Nearest Blood Bank</h2>
+    <form id="locationForm">
+       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d119040.88071947453!2d72.83671040000002!3d21.191065599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sgu!2sin!4v1710251643725!5m2!1sgu!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <button type="submit" id="submitBtn">Find Nearest Blood Bank</button>
+    </form>
+</div>
+<footer>
+    <!-- Footer links -->
+    <a href="https://bloodonation90876.000webhostapp.com/home-page">Home</a>
+    <a href="https://bloodonation90876.000webhostapp.com/history">History</a>
+    <a href="https://bloodonation90876.000webhostapp.com/feedback">Feedback</a>
+  </footer>
+
+<script>
+    // Function to handle form submission
+    document.getElementById("locationForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent form submission
+
+        // Get user's location input
+        const locationInput = document.getElementById("locationInput").value;
+
+        // Here you would implement the logic to find the nearest blood bank using Google Maps API
+
+        // For demonstration purposes, let's assume the nearest blood bank is located in a specific address
+        const nearestBloodBank = "123 Main Street, City, Country";
+
+        // Redirect to cart page with the nearest blood bank as query parameter
+        window.location.href = `https://bloodonation90876.000webhostapp.com/thank-you-2/?nearestBloodBank=${nearestBloodBank}`;
+    });
+</script>
+</body>
+</html>
+<!-- /wp:html -->

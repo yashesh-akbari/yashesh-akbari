@@ -1,0 +1,128 @@
+<!-- wp:html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Donation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+        }
+        input[type="date"],
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <form action="#" method="post" id="scheduleDonationForm">
+        <div class="form-group">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" min="" required >
+        </div>
+        <div class="form-group">
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" placeholder="Enter location" required >
+        </div>
+        <div class="form-group">
+            <label for="healthParameter">Health Parameter:</label>
+            <select id="healthParameter" name="healthParameter" required >
+                <option value="good">Good</option>
+                <option value="average">Average</option>
+                <option value="not_good">Not Good</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="relationship">Relationship:</label>
+            <input type="text" id="relationship" name="relationship" placeholder="Enter your relationship" required>
+        </div>
+        <input type="submit" value="Schedule Donation">
+    </form>
+</div>
+
+<script>
+ // Get today's date
+    var today = new Date().toISOString().split('T')[0];
+    
+    // Set the minimum date of the input field to today's date
+    document.getElementById("date").setAttribute("min", today);
+    document.getElementById("scheduleDonationForm").addEventListener("submit", function(event) {
+        // Prevent default form submission
+        event.preventDefault();
+
+        // Collect form data
+        const formData = new FormData(this);
+
+        // Construct URL-encoded query string
+        const queryString = new URLSearchParams(formData).toString();
+
+        // Redirect to thank you page with query string
+        window.location.href = "https://blooddonation099.wpcomstaging.com/thank-you/?" + queryString;
+    });
+</script>
+
+</body>
+</html>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<html>
+<head>
+<style>
+footer {
+    background-color: burlywood;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+</style>
+</head>
+<body>
+<footer>
+  <!-- Footer links -->
+  <a href="https://bloodonation90876.000webhostapp.com/home-page">Home</a>
+  <a href="https://bloodonation90876.000webhostapp.com/history">History</a>
+  <a href="https://bloodonation90876.000webhostapp.com/feedback">Feedback</a>
+</footer>
+
+</body>
+</html>
+<!-- /wp:html -->
